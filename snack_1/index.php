@@ -53,7 +53,7 @@
             Olimpia Milano - Cantù | 55-60 -->
             <?php
                 for ($i = 0; $i < count($partite); $i++) {
-                    echo " <li> {$partite[$i]["squadraCasa"]} - {$partite[$i]["squadraOspite"]} | {$partite[$i]["puntiSquadraCasa"]}-{$partite[$i]["puntiSquadraCasa"]} </li>";
+                    echo "<li> {$partite[$i]["squadraCasa"]} - {$partite[$i]["squadraOspite"]} | {$partite[$i]["puntiSquadraCasa"]}-{$partite[$i]["puntiSquadraCasa"]} </li>";
                 }
             ?>
         </ul>
