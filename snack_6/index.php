@@ -34,6 +34,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Snack 6</title>
         <style>
+            .forma {
+                display: inline-block;
+                padding: 30px 80px;
+            }
             .grigio {
                 background-color: grey;
             }
@@ -44,11 +48,11 @@
     </head>
     <body>
         <?php foreach($db as $nameRule => $rule) { ?>
-            <h2><?php echo $nameRule ?></h2>
+            <h2><?php echo strtoupper($nameRule) ?></h2>
 
                 <?php if($nameRule == 'teachers') { ?>
                     
-                    <div class="grigio">
+                    <div class="grigio forma">
                         <?php foreach($rule as $person) { ?>
                             <h3><?= "{$person["name"]} {$person["lastname"]} " ?></h3>
                         <?php } ?>
@@ -56,7 +60,7 @@
 
                 <?php } else {?>
 
-                    <div class="verde">
+                    <div class="verde forma">
                         <?php foreach($rule as $person) { ?>
                             <h3><?= "{$person["name"]} {$person["lastname"]} " ?></h3>
                         <?php } ?>
