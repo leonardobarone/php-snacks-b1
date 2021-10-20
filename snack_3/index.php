@@ -53,17 +53,17 @@ $posts = [
         <h1>Ecco tutti i post</h1>
         
             <?php 
-                foreach($posts as $nome => $post) {
+                foreach($posts as $data => $post) {
             ?>
 
                 <h2>
-                    <?php echo $nome ?>
+                    <?php echo $data ?>
                 </h2>
                 
                 <ul>
                     <?php foreach($post as $key => $value) { ?>
 
-                        <?php echo "<li> {$value["title"]} </li>"; ?>
+                        <?php echo "<li><strong>{$value["title"]}</strong></li>"; ?>
                         
                         <ul>
                             <?php 
