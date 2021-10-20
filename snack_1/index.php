@@ -59,3 +59,6 @@
         </ul>
     </body>
 </html>
+
+// echo
+<?= $test ?> 

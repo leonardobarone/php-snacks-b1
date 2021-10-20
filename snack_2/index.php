@@ -3,11 +3,11 @@
     $name = $_GET["nome"];
     $mail = $_GET["email"];
     $age = $_GET["eta"];
-    $age = (int)$age;
+    // $age = (int)$age;
     $esito = "Inserisci nome, email ed età";
 
     if (!empty($name) && !empty($mail) && !empty($age)) {
-        if (strlen($name) > 3 && is_int($age) && strpos($mail, '@') && strpos($mail, '.')) {
+        if (strlen($name) > 3 && is_numeric($age) && strpos($mail, '@') && strpos($mail, '.')) {
             $esito = "Accesso riuscito";
         } else {
             $esito = "Accesso negato";
@@ -24,6 +24,6 @@
         <title>Sanck 2</title>
     </head>
     <body>
-        <h1><?php echo $esito ?></h1>
+        <h1><?= $esito ?></h1>
     </body>
 </html>
