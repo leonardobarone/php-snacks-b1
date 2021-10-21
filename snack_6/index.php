@@ -34,15 +34,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Snack 6</title>
         <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
             .forma {
                 display: inline-block;
                 padding: 30px 80px;
             }
             .grigio {
-                background-color: grey;
+                background-color: lightgrey;
             }
             .verde {
-                background-color: green;
+                background-color: lightgreen;
             }
         </style>
     </head>
@@ -71,3 +74,5 @@
         <?php } ?>
     </body>
 </html>
+
+<!-- DA AGGIUSTARE -->
