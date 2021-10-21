@@ -16,14 +16,14 @@ $alunni = [
         "cognome" => "Pignataro",
         "voti" => [5, 5, 6, 8, 6]
     ],
+    [
+        "nome" => "Vincenzo",
+        "cognome" => "Gatti",
+        "voti" => [5, 5, 5, 5, 5]
+    ],
 ];
-function media($arr) {
-    $sum = 0;
-    for($i = 0; $i < count($arr); $i++) {
-        $sum += $arr[$i];
-    }
-    return $sum / count($arr); 
-}
+
+include __DIR__ . '/functions/functions.php';
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ function media($arr) {
         <?php foreach($alunni as $alunno): ?>
             <h1><?= "{$alunno["nome"]} {$alunno["cognome"]}"?></h1>
             <h3>
-                <?php echo media($alunno["voti"]) ?>
+                <?php echo "la media è " . media($alunno["voti"]) ?>
             </h3>
         <?php endforeach ?>        
     </body>
